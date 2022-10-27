@@ -1,0 +1,313 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+     font-family: Arial;
+     background-color: white;
+}
+
+#Logo{
+      lenght: 150px;
+      width: 170px;
+      float: left;
+      position: relative;
+      left: 50px;
+}
+
+.Header h1{
+           font-family: RoxbroughCF;
+           font-weight:lighter;
+           font-size: 50px;
+           padding: 40px 20px 0px 20px;
+           margin-bottom: 0px;
+           position: relative;
+           left: 50px;
+           top: 0px;
+}
+
+.Header p{
+          font-weight: lighter;
+          font-size: 15px;
+          margin: 0px;
+          position: relative;
+          left: 50px;
+          top: 0px;
+}
+
+.Header #Img1{
+              border: double #8F7D5E 5px;
+              border-radius: 5px;
+              lenght: 1000px;
+              width: 1000px;
+              padding: 15px;
+              margin-top: 60px;
+              position: relative;
+              left: 50px;
+              right: 50px;    
+}
+
+.Part1 h1{
+          font-size: 60px;
+          color: #318F38;
+          text-shadow: 5px 2px #61FF00;
+          float: left;
+          position: relative;
+          left: 250px;
+
+}
+
+.Part1 p{
+         border: 0px;
+         width: 600px;
+         height: 250px;
+         font-size: 22px;
+         text-align: justify;
+         text-indent: 30px;
+         text-decoration: underline;
+         line-height: 30px;
+         position: relative;
+         left: 600px;
+         bottom: 280px;
+         clear: left;
+}
+
+
+#Line1{
+   border-top: 4px dashed;
+   clear: left; 
+   margin-top: -100px;
+}
+
+.Part2{
+       display: flex;
+       text-align: center;
+       width: auto;
+       justify-content: center;
+}
+
+#Ex1{
+     border: solid #8F7D5E 3px;
+     font-size: 25px;
+     font-style: italic;
+     text-align: center;
+     background-color: #BEE4AE;
+     margin-top: 50px;
+     margin-right: 350px;
+     border-radius: 55px;
+     width: 250px;
+     height: 100px;
+     padding: 0px;         
+}
+
+#Ex2{
+     border: solid #8F7D5E 3px;
+     font-size: 20px;
+     font-style: italic;
+     text-align: center;
+     background-color: #BEE4AE;
+     margin-top: 50px;
+     border-radius: 55px;
+     width: 250px;
+     height: 100px;
+     padding-bottom: 25px;
+}
+
+#Img2 img{
+          border: solid #8F7D5E 3px;
+          width: 500px;
+          height: 350px;
+          padding: 5px;
+          position: relative;
+          right: 125px;
+          transition: 0.3s;
+}
+
+#Img2 img:hover{
+              background-color: #BEE4AE;
+}
+
+.Footer{
+        background-color: #8F7D5E;
+        text-align: center;
+        padding: 50px;
+        position: absolute;
+        bottom: -1500px;
+        left: 0px;
+        width: 100%;
+}
+
+.Footer p{
+          font-size: 25px;
+          font-style: italic;
+}
+.Footer a{
+          font-size: 25px;
+          color: white;
+          text-decoration: none;
+}
+
+
+.Content1 #BtHP{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px; 
+            position: sticky;
+            left: 1500px;
+            top: 10px;
+            width: 150px;
+            height: 150px; 
+            z-index: 2;
+}
+
+.Content1 #Line1_1{
+                   border-top: 3px solid;
+                   clear: left; 
+                   margin-top: 20px;
+}
+
+.Content1 #Logo{
+                lenght: 100px;
+                width: 100px;
+                float: left;
+                position: relative;
+                left: 50px;
+}
+
+.Content1 h1{
+           font-family: RoxbroughCF;
+           font-weight:lighter;
+           font-size: 50px;
+           padding: 20px 20px 0px 20px;
+           margin-top: 10px;
+           position: relative;
+           left: 50px;
+           top: 0px;
+}
+
+.Content1 #Line2_1{
+                   border-top: 1px solid;
+                   clear: left; 
+}
+
+.Content1 #Img1_1{
+                  border: double #8F7D5E 5px;
+                  border-radius: 5px;
+                  lenght: 1000px;
+                  width: 700px;
+                  padding: 15px;
+                  margin-top: 60px;
+                  position: relative;
+                  left: 50px;
+                  right: 50px;                    
+}
+
+.Content1 p{
+            border: 0px;
+            width: 600px;
+            height: 250px;
+            font-size: 22px;
+            text-align: justify;
+            text-indent: 30px;
+            text-decoration: underline;
+            line-height: 30px;
+            position: relative;
+            left: 800px;
+            bottom: 480px;
+            clear: left;
+}
+
+.Content-examples{
+                  background-color: #BEE4AE;
+                  margin: 0px;
+                  padding: 50px;
+                  position: absolute;
+                  top: 780px;
+                  left: 0px;
+                  width: 100%;
+                  z-index: 0;
+}
+
+.Content-examples h2{
+                     font-size: 30px;
+                     padding: 0px 20px 0px 0px;
+                     margin-top: 0px;
+                     position: relative;
+                     left: 50px;
+                     top: 0px;
+}
+
+.Examples{
+          display: flex;
+          justify-content: center;
+}
+
+.Ex_1{
+      width: 300px;
+}
+
+.Ex_1 h4{
+          border: solid white 3px;
+          font-size: 18px;
+          text-align: center;
+          background-color: #318F38;
+          margin-top: 50px;
+          margin-right: 350px;
+          border-radius: 55px;
+          width: 240px;
+          height: 70px;
+          padding: 10px;
+          position: relative;
+          left: 20px;
+}
+
+.Ex_1 p{
+        border: solid white 3px;
+        width: 280px;
+        height: 250px;
+        padding: 5px;
+        font-size: 15px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 20px;
+        word-spacing: -1px;
+        padding-bottom: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+}
+
+.Ex_1 #Long{
+        border: solid white 3px;
+        width: 280px;
+        height: 270px;
+}
+.Content-examples img{
+                      border: solid white 3px;
+                      width: 200px;
+                      height: 350px;
+                      padding: 5px;
+                      object-fit: cover;
+                      position: relative;
+                      left: 40px;
+}
+
+.Footer_1{
+        background-color: #8F7D5E;
+        text-align: center;
+        padding: 50px;
+        position: absolute;
+        bottom: -1060px;
+        left: 0px;
+        width: 100%;
+        z-index: 1;
+}
+
+.Footer_1 a{
+          font-size: 25px;
+          color: white;
+          text-decoration: none;
+}
