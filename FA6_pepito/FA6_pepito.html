@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+            <title>Pepito, Mathea</title>
+            <meta name="author" content="Mathea Calixtra M. Pepito"> 
+         
+            <style>
+                  body{    
+                       font-family: Arial;
+                       font-size: 25px;
+                  }   
+                  div{
+                       border: 1px solid black;
+                       height: 150px;
+                       width: 150px;
+                       background-color: white;
+                       padding-top: 5px;
+                  }
+                  header{
+                       display: flex;
+                  }
+                  .a1:link{
+                      text-decoration: none;
+                      color: #f58c8c;
+                      background-color: #f6d9de;
+                  }
+                  .a1:visited{
+                      color: #80030d;
+                      background-color: #d96d76;
+                  }
+                  .a1:hover{
+                      color: #d48e72;
+                      background-color: #fac8b5;
+                  }
+                  .a1:active{
+                      color: #eb5c49;
+                      background-color: #f9988b;
+                  }
+                  .a2:link{
+                      text-decoration: none;
+                      color: #940a86;
+                      background-color: #F96DEA;
+                      margin-left: 10px;
+                  }
+                  .a2:visited{
+                      color: #cf48be;
+                      background-color: #890479;
+                  }
+                  .a2:hover{
+                      color: #800559;
+                      background-color: #E415A3;
+                  }
+                  .a2:active{
+                      color: #6e2d60;
+                      background-color: #E23BBE;
+                  }
+                  div:target#div1{
+                      display: block;
+                      border: 1px solid black;
+                      color: white;
+                      background-color:#186b61;
+                  }
+                  div:target#div2{
+                      display: block;
+                      border: 10px dotted green;
+                      color: #4e8895;
+                      background-color: #a3cac9;
+                  }
+            </style>
+      </head>
+
+      <body>
+          <header>
+             <a class="a1" href="#div1" target="_blank">First Link</a>
+             <a class="a2" href="#div2" target="_blank">Second Link</a>
+          </header>
+          <br>
+          <div id="div1">
+              Div 1 here
+          </div>
+          <br>
+          <div id="div2">
+              Div 2 here
+          </div> 
+      </body>
+     
+</html>
