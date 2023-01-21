@@ -1,0 +1,781 @@
+*{
+  	box-sizing: border-box;
+}
+
+body{
+     	font-family: Arial;
+     	background-color: white;
+}
+
+.navigate{
+  	overflow: hidden;
+  	background-color: #8F7D5E;
+	padding: 5px;
+	border: 3px double #FFFFFF;
+	position: sticky;
+	top: 10px;
+	z-index: 2;
+}
+
+.navigate a{
+  	float: left;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+	transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.navigate a:hover{
+  	background-color: #BEE4AE;
+  	color: black;
+	box-shadow: inset 200px 0 0 0 white;;
+}
+
+.navigate a.active{
+  	background-color: #BEE4AE;
+  	color: white;
+}
+
+#Logo_index{
+      	width: 170px;
+      	float: left;
+      	position: relative;
+      	left: 50px;
+}
+
+.Index header h1{
+      	font-family: RoxbroughCF;
+       	font-weight:lighter;
+        font-size: 50px;
+        padding: 40px 20px 0px 20px;
+        margin-bottom: 0px;
+        position: relative;
+        left: 50px;
+       	top: 0px;
+}
+
+.Index header p{
+      	font-weight: lighter;
+    	font-size: 15px;
+     	margin: 0px;
+      	position: relative;
+    	left: 50px;
+   	top: 0px;
+}
+
+.Index header #Img1{
+       	border: double #8F7D5E 5px;
+        border-radius: 5px;
+      	width: 1000px;
+      	padding: 15px;
+    	margin-top: 60px;
+     	position: relative;
+      	left: 50px;
+      	right: 50px;    
+}
+
+.Index .Context1{
+	height: 455px;
+}
+
+.Index .Context1 h1{
+    	font-size: 60px;
+       	color: #318F38;
+ 	text-shadow: 5px 2px #61FF00;
+	float: left;
+	position: relative;
+     	left: 250px;
+
+}
+
+.Index .Context1 p{
+    	border: 0px;
+        width: 600px;
+        height: 250px;
+        font-size: 22px;
+        text-align: justify;
+        text-indent: 30px;
+        text-decoration: underline;
+        line-height: 30px;
+        position: relative;
+        left: 600px;
+        bottom: 280px;
+        clear: left;
+}
+
+.Index .Context1 #Line1{
+	position: relative;
+      	top:-200px;  
+	border-top: 4px dashed;
+   	clear: left; 
+   	
+}
+
+.Index .Context2 ul{
+	margin-top: 40px;
+}
+
+.Index .Context2-Examples{
+       	display: flex;
+       	text-align: center;
+       	width: auto;
+       	justify-content: center;
+}
+
+.Index #Ex1{
+     	border: solid #8F7D5E 3px;
+     	font-size: 25px;
+     	font-style: italic;
+     	text-align: center;
+     	background-color: #BEE4AE;
+     	margin-top: 50px;
+     	margin-right: 350px;
+     	border-radius: 55px;
+     	width: 250px;
+     	height: 100px;
+     	padding: 0px;         
+}
+
+.Index #Ex2{
+     	border: solid #8F7D5E 3px;
+    	font-size: 20px;
+     	font-style: italic;
+     	text-align: center;
+     	background-color: #BEE4AE;
+     	margin-top: 50px;
+     	border-radius: 55px;
+     	width: 250px;
+     	height: 100px;
+     	padding-bottom: 25px;
+}
+
+.Index #Img2 img{
+        border: solid #8F7D5E 3px;
+        width: 500px;
+        height: 350px;
+        padding:10px;
+        position: relative;
+        right: 125px;
+        transition: 0.3s;
+}
+
+.Index #Img2 img:hover{
+     	background-color: #BEE4AE;
+}
+
+footer p{
+        font-size: 25px;
+        font-style: italic;
+}
+
+footer a{
+       	font-size: 25px;
+        color: white;
+        text-decoration: none;
+}
+
+.Index footer{
+       	background-color: #8F7D5E;
+        text-align: center;
+        padding: 50px;
+        position: absolute;
+        bottom: -1350px;
+        width: 100%;
+}
+
+
+/*CONTENT1*/
+
+
+#Line1{
+      	border-top: 3px solid;
+   	clear: left; 
+       	margin-top: 20px;
+}
+
+#Logo{
+       	width: 100px;
+       	float: left;
+      	position: relative;
+     	left: 50px;
+}
+
+.Content1 h1{
+   	font-family: RoxbroughCF;
+       	font-weight:lighter;
+     	font-size: 50px;
+  	padding: 20px 20px 0px 20px;
+      	margin-top: 10px;
+       	position: relative;
+     	left: 50px;
+       	top: 0px;
+}
+
+#Line2{
+    	border-top: 1px solid;
+     	clear: left; 
+}
+
+.Content1 #Img{
+      	border: double #8F7D5E 5px;
+      	border-radius: 5px;
+       	width: 700px;
+	padding: 15px;
+     	margin-top: 60px;
+       	position: relative;
+ 	left: 50px;
+    	right: 50px;                    
+}
+
+.Content1 .Context2 #Line3_1{
+     	border-top: 3px dashed;
+     	clear: left; 
+      	margin-top: 20px;
+}
+
+.Context1 p{
+     	border: 0px;
+       	width: 600px;
+       	height: 250px;
+      	font-size: 22px;
+       	text-align: justify;
+      	text-indent: 30px;
+      	text-decoration: underline;
+     	line-height: 30px;
+     	position: relative;
+        left: 800px;
+      	bottom: 480px;
+    	clear: left;
+}
+
+.Content1 .Context2{
+      	background-color: #BEE4AE;
+     	margin: 0px;
+      	padding: 50px;
+       	position: absolute;
+      	top: 780px;
+     	left: 0px;
+     	width: 100%;
+   	z-index: -1;
+}
+
+.Content1 .Context2 h2{
+       	font-size: 30px;
+       	padding: 0px 20px 0px 0px;
+      	margin-top: 0px;
+    	position: relative;
+     	left: 50px;
+      	top: 0px;
+}
+
+.Examples{
+      	display: flex;
+       	justify-content: center;
+}
+
+.Examples .Ex_1{
+      	width: 300px;
+}
+
+.Examples .Ex_1 h4{
+       	border: solid white 3px;
+     	font-size: 18px;
+      	text-align: center;
+    	background-color: #318F38;
+       	margin-top: 50px;
+      	margin-right: 350px;
+     	border-radius: 55px;
+     	width: 240px;
+     	height: 70px;
+   	padding: 10px;
+  	position: relative;
+     	left: 20px;
+}
+
+.Examples .Ex_1 p{
+        border: solid white 3px;
+        width: 280px;
+        height: 250px;
+        padding: 5px;
+        font-size: 15px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 20px;
+        word-spacing: -1px;
+        padding-bottom: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+}
+
+.Examples .Ex_1 #Long{
+        border: solid white 3px;
+        width: 280px;
+        height: 270px;
+}
+.Examples img{
+   	border: solid white 3px;
+       	width: 200px;
+   	height: 350px;
+      	padding: 5px;
+     	object-fit: cover;
+       	position: relative;
+   	left: 40px;
+}
+
+.Content1 footer{
+       	background-color: #8F7D5E;
+        text-align: center;
+        padding: 50px;
+        position: absolute;
+        bottom: -1165px;
+        left: 0px;
+        width: 100%;
+}
+
+
+
+/*CONTENT2*/
+
+
+.Content2 h1{
+	font-family: RoxbroughCF;
+       	font-weight:lighter;
+     	font-size: 50px;
+  	padding: 20px 20px 0px 20px;
+      	margin-top: 10px;
+       	position: relative;
+     	left: 50px;
+       	top: 0px;
+
+}
+
+.Content2 .Video h1{
+	border: double #8F7D5E 5px;
+	background-color: #BEE4AE;
+	-webkit-transform: skew(-30deg);
+	-ms-transform: skew(-30deg);
+	-mos-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+	transform: skew(-30deg);
+	width: 90%;
+	font-size: 35px;
+       	padding: 10px;
+      	margin-top: 0px;
+    	text-align: center;
+}
+
+video{
+	width: 90%;
+	display: block;
+	margin: auto;
+	border: double #8F7D5E 5px;
+        border-radius: 5px;
+      	padding: 10px;
+}
+
+.Content2 .Up{
+	display: flex;
+       	justify-content: center;
+}
+
+.Content2 .Context1 #Line3_2{
+	border-top: 3px dashed;
+     	clear: left; 
+      	margin-top: 20px;
+}
+
+.Content2 .Context1{
+	border: 10px double #8F7D5E;
+	border-radius: 5px;
+	background-color: #BEE4AE;
+    	padding: 30px;
+    	position: relative;
+    	top: 20px;
+    	left: 40px;
+    	width: 700px;
+	height: 600px;
+    	z-index: -1;
+}
+
+.Content2 .Context1 img{
+	border: double white 5px;
+       	width: 250px;
+   	height: 350px;
+      	padding: 5px;
+	margin-top: 15px;
+     	object-fit: cover;
+       	position: relative;
+	bottom: -30px;
+   	left: 40px;
+}
+
+.Content2 .Context1 p{
+	border: 3px solid white;
+	padding: 10px;
+	text-decoration: none;
+        width: 250px;
+        height: 250px;
+        font-size: 15px;
+        text-align: justify;
+        text-indent: 10px;
+        line-height: 20px;
+        position: relative;
+        left: 320px;
+        bottom: 300px;
+}
+
+.Content2 .Context2 #Line4_2{
+	border-top: 3px dashed;
+     	clear: left; 
+      	margin-top: 20px;
+}
+
+.Content2 .Context2{
+	border: 10px double #8F7D5E;
+	border-radius: 5px;
+	background-color: #BEE4AE;
+	margin: 50px;
+    	padding: 30px;
+    	position: relative;
+    	top: -30px;
+    	width: 700px;
+	height: 600px;
+    	z-index: -1;
+}
+
+.Content2 .Context2 img{
+	border: double white 5px;
+       	width: 200px;
+   	height: 200px;
+      	padding: 5px;
+	margin-top: 15px;
+     	object-fit: cover;
+       	position: relative;
+   	left: 40px;
+	float:left;
+}
+
+.Content2 .Context2 #Adjust img{
+	border: double white 5px;
+       	width: 200px;
+   	height: 200px;
+      	padding: 5px;
+	margin-top: 15px;
+     	object-fit: cover;
+       	position: relative;
+	bottom: 120px;
+   	left: 40px;
+	float:left;
+}
+
+
+.Content2 .Context2 p{
+	border: solid white 3px;
+       	width: 350px;
+   	height: 100px;
+      	padding: 5px;
+	margin-top: 15px;
+       	position: relative;
+	bottom: 150px;
+   	left: 250px;
+	clear:left;
+}
+
+.Content2 .Context2 #Adjust p{
+	border: solid white 3px;
+       	width: 350px;
+   	height: 100px;
+      	padding: 5px;
+	margin-top: 15px;
+       	position: relative;
+	bottom: 270px;
+   	left: 250px;
+	clear:left;
+
+}
+
+.Content2 .Context3{
+	border: 10px double #8F7D5E;
+	border-radius: 5px;
+	background-color: #BEE4AE;
+	margin: 50px;
+	margin-left: 38px;
+    	padding: 30px;
+    	position: relative;
+    	top: -110px;
+    	width: 1335px;
+	height: 500px;
+}
+
+.Content2 .Context3 #Line5_2{
+	border-top: 3px dashed;
+     	clear: left; 
+      	margin-top: 20px;
+}
+
+
+.Content2 .Context3 img{
+	display: flex;
+	margin: 20px;
+	border: double white 5px;
+       	width: 350px;
+   	height: 300px;
+      	padding: 5px;
+	margin-top: 15px;
+     	object-fit: cover;
+       	position: relative;
+   	left: 40px;
+	float:left;
+}
+
+.Content2 .Context3 p{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 20px;
+	text-align: center;
+       	width: 330px;
+   	height: 280px;
+      	padding: 5px;
+}
+
+.P1{
+	position: absolute;
+	top: 125px;
+   	left: 100px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.P1:hover{
+	opacity: 1;
+}
+
+.P2{
+	position: absolute;
+	top: 125px;
+   	left: 490px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.P2:hover{
+	opacity: 1;
+}
+
+.P3{
+	position: absolute;
+	top: 125px;
+   	left: 880px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.P3:hover{
+	opacity: 1;
+}
+
+.Content2 footer{
+       	background-color: #8F7D5E;
+        text-align: center;
+        padding: 50px;
+        position: absolute;
+        bottom: -1620px;
+        width: 100%;
+}
+
+
+/*CONTENT3*/
+
+
+
+.Content3 h1{
+	font-family: RoxbroughCF;
+       	font-weight:lighter;
+     	font-size: 50px;
+  	padding: 20px 20px 0px 20px;
+      	margin-top: 10px;
+	margin-bottom: 0px;
+       	position: relative;
+     	left: 50px;
+       	top: 0px;
+}
+
+.Content3 audio{
+	border: 3px solid #8F7D5E;
+        border-radius: 5000px;
+}
+
+.Content3 .Context1 h1{
+	font-family: RoxbroughCF;
+	text-align:center;
+       	background-color: white;
+	border: 10px double #8F7D5E;
+	border-radius: 5px;
+	padding: 10px;
+	width: 90%;
+}
+
+.Content3 .Context1 img{
+	border: 5px solid #8F7D5E;
+	margin-top: 5px;
+	width: 400px;
+        border-radius: 50%;
+	position: relative;
+	left: 490px;
+}
+
+.Content3 .Context1 ol{
+	background: #BEE4AE;
+	width: 450px;
+	position: relative;
+	left: 460px;
+	line-height: 20px;
+	text-align: justify;
+	border: 10px double #8F7D5E;
+	border-radius: 5px;
+}
+
+.Content3 .Context1 ol li{
+	background: white;
+  	color: #8F7D5E;
+  	margin: 5px;
+}
+
+.Content3 .Context2{
+	background-color: #BEE4AE;
+	padding: 10px;
+}
+
+.Content3 .Context2 #Line1_3{
+	border-top: 3px dashed;
+     	clear: left; 
+      	
+}
+
+.Content3 .Context2 article{
+	display: flex;
+	padding: 10px;
+	position:relative;
+	left: 365px;
+}
+
+.Sprite_1{
+	background: url('images/sprite image.png') no-repeat -624px -141px;
+	width: 138px;
+	height: 138px;
+	margin: 10px;
+}
+
+.Sprite_1:hover{
+	background: url('images/sprite image.png') no-repeat -624px -319px;
+	width: 138px;
+	height: 138px;
+	margin: 10px;
+}
+
+.Sprite_2{
+	background: url('images/sprite image.png') no-repeat -385px -138px;
+	width: 138px;
+	height: 137px;
+	margin: 10px;
+}
+
+.Sprite_2:hover{
+	background: url('images/sprite image.png') no-repeat -385px -314px;
+	width: 138px;
+	height: 138px;
+	margin: 10px;
+}
+
+.Sprite_3{
+	background: url('images/sprite image.png') no-repeat -862px -138px;
+	width: 138px;
+	height: 138px;
+	margin: 10px;
+}
+
+.Sprite_3:hover{
+	background: url('images/sprite image.png') no-repeat -862px -319px;
+	width: 138px;
+	height: 138px;
+	margin: 10px;
+}
+
+.Sprite_4{
+	background: url('images/sprite image.png') no-repeat -141px -141px;
+	width: 134px;
+	height: 134px;
+	margin: 10px;
+}
+
+.Sprite_4:hover{
+	background: url('images/sprite image.png') no-repeat -141px -314px;
+	width: 134px;
+	height: 134px;
+	margin: 10px;
+}
+
+.Content3 footer{
+       	background-color: #8F7D5E;
+        text-align: center;
+        padding: 50px;
+        width: 100%;
+}
+
+
+/*CONTENT4*/
+
+.Content4{
+	background-color: rgba(35, 216, 137, 0.08);
+}
+
+.Content4 h1{
+      	font-family: RoxbroughCF;
+       	font-weight:lighter;
+     	font-size: 50px;
+  	padding: 20px 20px 0px 20px;
+      	margin-top: 10px;
+       	position: relative;
+     	left: 50px;
+       	top: 0px;
+}
+
+.Content4 h2{
+	font-family: RoxbroughCF;
+       	font-weight:lighter;
+	font-size: 40px;
+       	padding: 25px;
+    	text-align: center;
+}
+
+.Content4 article p{
+	font-size: 15px;
+	text-indent: 50px;
+	line-height: 25px;
+	text-align: left;
+	width: 790px;
+	position: relative;
+	left: 350px;
+}
+
+.Content4 span{
+	font-style: italic;
+}
+
+.Content4 footer{
+       	background-color: #8F7D5E;
+        text-align: center;
+        padding: 50px;
+        width: 100%;
+}
+
