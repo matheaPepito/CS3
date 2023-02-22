@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		*{
+			text-align: center;
+		}
+	</style>
+
+	<title>Formative 9</title>
+	<meta name="author" content="Mathea Calixtra M. Pepito">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+</head>
+
+<body>
+	<iframe onload="myFunction()" src="second.html"></iframe>
+	<p id="result"></p>
+
+<script>
+	function myFunction(){ // this function is a user-defined and it starts the process of taking the user to the second webpage
+		x = confirm("Would you like to proceed to the second page?");
+		if (x == true){
+           		window.open("second.html");
+	  		x="You pressed OK!";
+        	}
+        	else {
+           		x="You pressed CANCEL!";
+        	}
+        	document.getElementById("result").innerHTML = x;
+        }
+</script>
+
+</body>
+
+</html>
