@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Formative 10</title>
+	<meta name="author" content="Mathea Calixtra M. Pepito" 
+</head>
+<body onload="randomNum()">
+	<div>
+		<p id="randomNumber"></p>
+		<p id="breakdown"></P>
+
+	</div>
+	<script>
+		var x;
+		var ones;
+		var tens;
+		var hundreds;
+
+		function randomNum(){
+			x = 1000;
+			ones = Math.floor(x%10);
+			tens = Math.floor((x%100)/10)*10;
+			hundreds = Math.floor(x/100)*100;
+			
+			document.getElementById("randomNumber").innerHTML = "Randomly generated number: " + x;
+			if((x <= 999) && (x >= 0)){
+				document.getElementById("breakdown").innerHTML = "Breakdown: " + hundreds + ", " + tens  + ", " + ones;
+			} else{
+				document.getElementById("breakdown").innerHTML = "Breakdown: 0, 0, 0";
+			}
+		}
+
+	</script>
+	
+</body>
+</html>
