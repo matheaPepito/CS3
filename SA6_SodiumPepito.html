@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One Time Password </title>
+	<meta name="author" content="Mathea Calixtra M. Pepito">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+
+        <style>
+        	body {background: lightblue; 
+            	text-align: center;
+            	font-family: arial;
+                color: navy;
+            }
+            button {padding: 10px; background:violet }
+            a {font-size: 0.5em; color: maroon}
+        </style>
+
+</head>
+
+<body onload="generatePass()">
+	<h1> Final Verification Step </h1>
+	<h2> Current OTP: <span id="otp"></span> <a onclick="generatePass()"href=""> New OTP </a></h2>
+    	<button onclick="verify()"> Enter the OTP as shown above </button>
+    
+	<script>
+
+		// First, create a function that will generate a new password
+    		function generatePass() {
+			// Using var, declare a digits variable that will hold the password
+			var digits = "0123456789";
+			var pass = ""; // The initial value of the variable pass
+			for (let i = 0; i < 6; i++ ) {
+				pass += digits[Math.floor(Math.random() * 10)];
+			}
+			return pass;
+		}
+		var x = generatePass(); /* Make the function generatePass() a variable to be able to compare later */
+		document.getElementById("otp").innerHTML = x; /* Use document.getElementById to change otp into a random number of 6 */
+		
+		// Next, create a function that will verify the user's input
+		function verify() {
+			// Use prompt to get an input
+			var verifyPass = prompt("Type in the generated OTP to be directed to the next page: ","Password");
+			
+			/* Then use if else statement to conduct wether to transfer the user to another window or not */
+			if(verifyPass == x){ 
+				window.open("https://www.youtube.com/watch?v=i0p1bmr0EmE");
+			} else{
+				alert("The password you have entered is incorrect. Please try again.");
+			}
+
+		}
+
+   	</script>
+</body>
+</html>
+
