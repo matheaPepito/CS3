@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<title>Formative Assessment 12</title>
+        <meta name="author" content="Mathea Calixtra M. Pepito">
+
+   	<style>
+		p{
+			margin-bottom: 0px;
+		}
+		table {
+    			border: 1px solid gray;
+		}
+
+		table td, table th {
+    			border: 1px solid gray;
+		}
+
+    	</style>
+
+</head>
+<body>
+	<p>[enter a number between 2 and 10]</p>
+         <input id="countRows"> by 
+         <!-- Asks the user to input the first number -->
+         <input id="countColumns"><br><br>
+         <!-- Asks the user to input the second number -->
+
+         <button onclick="multiplicationTable()">Click here when ready!</button><br><br>
+         <!-- A button that generates the function multiplicationTable()-->
+
+    	<div id="output"></div>
+    	<!-- Where the Multiplication Table will be generated -->
+	
+	<script>
+		function multiplicationTable() {
+
+    			var table;
+			table   =   "<table>";
+			let countRows       =   document.getElementById("countRows").value;
+			let countColumns    =   document.getElementById("countColumns").value;
+
+			let counts = [
+    				countRows,
+    				countColumns
+			]
+
+			let count   =   {
+   				Rows:      document.getElementById("countRows").value,
+    				Columns:   document.getElementById("countColumns").value
+			}
+
+
+			for (num of counts) {
+    				if (num <= 2 || num >= 10) {
+        			alert("Please enter values between 2 and 10 ONLY.");
+        			return;
+    				}
+    				// If any of the given input is not between 2 and 10, alert the user
+
+    				if (isNaN(num)) {
+        				alert("Input must only be in numbers!");
+        				return;
+    				}
+    				// If any of the given input is not a number, alert the user
+
+    			}
+
+			for (x = 1; x <= count.Rows; x++) {
+    				table += "<tr>";
+
+    				for (y =  1;y <= count.Columns; y++) {
+        				table   +=  "<td>" + y * x + "</td>";
+    				} 
+
+    				table += "</tr>";
+			}
+
+			table   +=  "</table>";
+			document.getElementById("output").innerHTML = table;
+		}
+	</script>  
+</body>
+</html>
