@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>4th Quarter AA</title>
+	<meta name="author" content="Mathea Calixtra M. Pepito">
+</head>
+<body>
+	<script>
+		// First, list down all the codons and their amino acid relationships
+		const geneticCode = {
+  			AUG: "Met", // Starting codon
+  			UUU: "Phe", UUC: "Phe",
+  			UUA: "Leu", UUG: "Leu", CUU: "Leu", CUC: "Leu", CUA: "Leu", CUG: "Leu",
+  			AUU: "Ile", AUC: "Ile", AUA: "Ile",
+  			GUU: "Val", GUC: "Val", GUA: "Val", GUG: "Val",
+  			UCU: "Ser", UCC: "Ser", UCA: "Ser", UCG: "Ser", AGU: "Ser", AGC: "Ser",
+  			CCU: "Pro", CCC: "Pro", CCA: "Pro", CCG: "Pro",
+			ACU: "Thr", ACC: "Thr", ACA: "Thr", ACG: "Thr",
+			GCU: "Ala", GCC: "Ala", GCA: "Ala", GCG: "Ala",
+  			UAU: "Tyr", UAC: "Tyr",
+			CAU: "His", CAC: "His",
+  			CAA: "Gln", CAG: "Gln",
+  			AAU: "Asn", AAC: "Asn",
+			AAA: "Lys", AAG: "Lys",
+			GAU: "Asp", GAC: "Asp",
+			GAA: "Glu", GAG: "Glu",
+			UGU: "Cys", UGC: "Cys",
+			UGG: "Trp",
+     			CGU: "Arg", CGC: "Arg", CGA: "Arg", CGG: "Arg", AGA: "Arg", AGG: "Arg",
+			GGU: "Gly", GGC: "Gly", GGA: "Gly", GGG: "Gly",
+  			UAA: "STOP", UAG: "STOP", UGA: "STOP" // Stopping codons
+		};
+		
+		
+		// Ask the user for the mRNA sequence
+		var input = prompt("Enter mRNA sequence:");
+
+		// Find the start codon
+			let x = input.indexOf("AUG");
+			if (x === -1) {
+  				document.write("No start codon found.");
+			} else {
+  				// Create an array for the codons and add the start codon
+  				const codons = [input.substr(x, 3)];
+  				for (let i = x + 3; i < input.length; i += 3) {
+    				const codon = input.substr(i, 3);
+    				if (codon in geneticCode) {
+      					if (geneticCode[codon] === "STOP") {
+        					codons.push(codon);
+        					break;
+      					} else {
+        					codons.push(codon);
+      					}
+    				
+    				}
+  			}
+
+  			// Print the codons in the form of an array
+  			document.write("[");
+  			for (let i = 0; i < codons.length; i++) {
+    				const codon = codons[i];
+    				document.write(`"${codon}"`);
+    				if (i < codons.length - 1) {
+      					document.write(", ");
+    				}
+  			}
+  			document.write("] <br>");
+
+			// Then, create the final output - codons with their corresponding amino acid
+			for (let i = 0; i < codons.length; i++) {
+  				const codon = codons[i];
+    				const aminoAcid = geneticCode[codon];
+  				document.write(`${codon} --> ${aminoAcid} <br>`);
+			}
+
+		};
+
+	</script>
+</body>
+</html>
