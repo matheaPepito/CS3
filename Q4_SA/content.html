@@ -1,0 +1,507 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>4th Quarter Project (Questions)</title>
+	<meta name="authors" content="Mathea Calixtra M. Pepito, Francis Tadiaman, Samantha Shina Cabanlit, Madisson Luntao">
+
+	<style>
+		body {
+			background-color:#b1e1d3;
+			height: 100%;
+			width: auto;
+		}
+		header{
+			font-size: 30px;
+			color: #efefef;
+			text-align: center;
+			background-color: #7F5F3F;
+			border: 10px double #efefef;
+			width: 1000px;
+			border-radius: 10px;
+			position: absolute;
+			right: 230px;
+
+		}
+		.content{
+			z-index: -2;
+			background-color: #efefef;
+			position: absolute;
+			right: 250px;
+			top: 200px;
+			color: #7F5F3F;
+			font-size: 23px;
+			border: 3px solid #7F5F3F;
+			border-radius: 10px;
+			padding: 30px;
+			width: 900px;
+			padding-bottom: 100px;
+
+		}
+		legend{
+			font-size: 30px;
+			border: 3px solid #7F5F3F;
+			border-radius: 5px;
+			padding: 5px;
+			background-color: #daf0e3;
+		}
+		.b {
+			font-weight : bold;
+			font-size: 25px;
+		}
+		.format #instruction{
+			font-size: 35px;
+		}
+		#instruction #bold{	
+			font-weight: bold;
+		}
+		.choices h2{
+			margin: 0px;
+			font-size: 25px;
+		}
+		.choices p{
+			margin: 0px;
+			font-size: 18px;
+		}
+		.question h2{
+			margin: 0px;
+			margin-top: 10px;
+			font-size: 19px;
+		}
+		.question p{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			font-size: 18px;
+		}
+		.part4 p{
+			font-size: 50px;
+			position: absolute;
+			bottom: 160px;
+			left: 250px;
+		}
+		input[type="submit"] {
+			background-color: #7F5F3F;
+			border-radius: 5px;
+			color: #fff;
+			font-size: 20px;
+			margin: 5px;
+			padding: 10px;
+			cursor: pointer;
+			transition: background-color 0.2s;
+			width: 30%;
+			height: 50px;
+			margin-bottom: 30px;
+			border: none;
+			outline: none;
+			position: relative;
+			top: 125px;
+			right: -450px
+		}
+		input[type="reset"] {
+			background-color: #7F5F3F;
+			border-radius: 5px;
+			color: #fff;
+			font-size: 20px;
+			margin: 5px;
+			padding: 10px;
+			cursor: pointer;
+			transition: background-color 0.2s;
+			width: 30%;
+			height: 50px;
+			margin-bottom: 30px;
+			border: none;
+			outline: none;
+			margin-left: 9%;
+			position: relative;
+			top: 125px;
+			right: 200px
+		}
+		input[type="submit"]:hover{
+			background-color: #3e8e41;
+		}
+		input[type="reset"]:hover {
+			background-color: #DC143C;
+
+		}
+		#score {
+		 	text-align: center;
+			background-color: #7F5F3F;
+			border: 5px double #efefef;
+			border-radius: 10px;
+			color: white;
+			padding: 10px;
+		 }		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>NCE Reviewer: English</h1>
+	</header>
+	<div class="content">
+    		<form id="quiz" onsubmit="return validateForm(event)">
+    		<fieldset>
+      			<legend>Question 1: Grammar:</legend>
+      			<p>My brother _____ a flat in London.</p>
+      			<label>
+        			<input type="radio" name="q1" value="has" required> has
+      			</label><br>
+      			<label>
+        			<input type="radio" name="q1" value="not"> haves
+      			</label><br>
+      			<label>
+        			<input type="radio" name="q1" value="not"> lives
+      			</label><br>
+    				<br>
+      			<span id="answer1"></span>	
+		</fieldset><br><br>
+
+    		<fieldset>
+       			<legend>Question 2: Grammar</legend>
+      			<p>_______ meat do you eat every day?</p>
+      			<label>
+        			<input type="radio" name="q2" value="not" required> How many
+      			</label><br>
+      			<label>
+       	 			<input type="radio" name="q2" value="how much"> How much
+      			</label><br>
+      			<label>
+        			<input type="radio" name="q2" value="not"> How does
+      			</label><br>
+     				<br>
+      			<span id="answer2"></span>
+    		</fieldset><br><br>
+   
+   		<fieldset>
+     			<legend>Question 3: Grammar</legend>
+    			<p>You can take one of the pencils, they’re _____.</p>
+    			<label>
+      				<input type="radio" name="q3" value="ours"  required> ours
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q3" value="not"> us
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q3" value="not"> our
+    			</label><br>
+ 				<br>
+      			<span id="answer3"></span>
+		</fieldset><br><br>
+    
+    		<fieldset>
+     			<legend>Question 4: Choose the Correct antonym</legend>
+    			<p>Beneficial</p>
+    			<label>
+      				<input type="radio" name="q4" value="not" required> Rewarding
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q4" value="detrimental"> Detrimental
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q4" value="not"> Advantageous
+    			</label><br>
+ 				<br>
+     			<span id="answer4"></span>
+		</fieldset><br><br>
+    
+    		<fieldset>
+     			<legend>Question 5: Choose the Correct antonym</legend>
+    			<p>Fierce</p>
+    			<label>
+      				<input type="radio" name="q5" value="not" required> Ferocious
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q5" value="not"> Threatening
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q5" value="gentle"> Gentle
+    			</label><br>
+				<br>
+      			<span id="answer5"></span>
+		</fieldset><br><br>
+
+    		<fieldset>
+     			<legend>Question 6: Choose the correct antonym</legend>
+    			<p>Promote</p>
+    			<label>
+      				<input type="radio" name="q6" value="not" required> Encourage
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q6" value="obstruct"> Obstruct
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q6" value="not"> Influence
+   			</label><br>
+   				<br>
+      			<span id="answer6"></span>
+    		</fieldset><br><br>
+  
+    		<fieldset>
+     			<legend>Question 7: Choose the correct order of adjectives</legend>
+    			<p>The _____ are in the middle aisle next to the vegetables.</p>
+    			<label>
+      				<input type="radio" name="q7" value="not" required> large fish
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q7" value="not"> boxed fish
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q7" value="frozen fish"> frozen fish
+    			</label><br>
+				<br>
+      			<span id="answer7"></span>
+		</fieldset><br><br>
+    
+    		<fieldset>
+    			<legend>Question 8: Choose the correct order of adjectives</legend>
+    			<p>Many _____ and _____ _____ on the river.</p>
+    			<label>
+      				<input type="radio" name="q8" value="Boats, barges, bobbed" required> boats, barges, bobbed
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q8" value="not"> boats, ducks, floated
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q8" value="not"> ducks, barges, floated
+    			</label><br>
+				<br>
+      			<span id="answer8"></span>
+   		</fieldset><br><br>
+   
+   		<fieldset>
+     			<legend>Question 9: Choose the correct order of adjectives</legend>
+    			<p>Mrs. Shine drove a _____ _____ _____.</p>
+    			<label>
+      				<input type="radio" name="q9" value="Violet, van, violently" required> violet, van, violently
+   		 	</label><br>
+    			<label>
+      				<input type="radio" name="q9" value="not"> bus, white, slowly
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q9" value="not"> red, Mercedes, quickly
+    			</label><br>
+				<br>
+      			<span id="answer9"></span>
+    		</fieldset><br><br>
+   
+    		<fieldset>
+     			<legend>Question 10: Find the synonym</legend>
+    			<p>Spontaneously.</p>
+    			<label>
+      				<input type="radio" name="q10" value="not" required> Simply
+    			</label><br>
+      				<input type="radio" name="q10" value="not"> Thoughtfully
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q10" value="unplanned"> Unplanned
+    			</label><br>
+				<br>
+      			<span id="answer10"></span>
+    		</fieldset><br><br>
+    
+    		<fieldset>
+    		 	<legend>Question 11: Anology</legend>
+    			<p>Elbow: Arm = Knee : ?</p>
+    			<label>
+      				<input type="radio" name="q11" value="not" required> Finger
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q11" value="not"> Nose
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q11" value="leg"> Leg
+    			</label><br>
+				<br>
+      			<span id="answer11"></span>
+		</fieldset><br><br>
+    
+    		<fieldset>
+     			<legend>Question 12: Anology</legend>
+    			<p>Peace : Chaos = Creation : ?</p>
+    			<label>
+      				<input type="radio" name="q12" value="not" required> Construction<br>
+    			</label>
+    			<label>
+      				<input type="radio" name="q12" value="not"> Build<br>
+    			</label>
+    			<label>
+      				<input type="radio" name="q12" value="destructions"> Destruction<br>
+    			</label>
+				<br>
+      			<span id="answer12"></span>
+		</fieldset><br><br>
+    
+    		<fieldset>
+     			<legend>Question 13: Anology</legend>
+    			<p>Architect : Building = Sculptor : ?</p>
+    			<label>
+      				<input type="radio" name="q13" value="not" required> Chisel
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q13" value="not"> Stone
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q13" value="statue"> Statue
+    			</label><br>
+				<br>
+       			<span id="answer13"></span>
+		</fieldset><br><br>
+    
+    		<fieldset>
+     			<legend>Question 14: Anology</legend>
+    			<p>Poles : Magnet = ? : Battery</p>
+    			<label>
+      				<input type="radio" name="q14" value="not" required> Cell
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q14" value="not"> Energy
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q14" value="terminal"> Terminal
+    			</label><br>
+				<br>
+  			<span id="answer14"></span>
+		</fieldset><br><br>
+    
+    		<fieldset>
+     			<legend>Question 15: Anology</legend>
+    			<p>Orator : Speech = ? : ? </p>
+    			<label>
+      				<input type="radio" name="q15" value="not" required> Playwright : Stage
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q15" value="comedian: jokes"> Comedian : Jokes
+    			</label><br>
+    			<label>
+      				<input type="radio" name="q15" value="not"> Protagonist : Story
+    			</label><br>
+				<br>
+  			<span id="answer15"></span>	</fieldset><br><br>
+		<fieldset>
+
+		<legend>Fill in the Blanks</legend>
+		<div class="content3">
+        		<p id="instruction">Complete the paragraph with suitable words to complete the passage. Make sure to input the <span id="bold">WORD</span> (in lower case), not the respective letter.</p>
+
+        		<div class="choices">
+            			<h2>Choices:</h2>
+            			<p>A. Harmful | B. Heavily | C. Physically | D. Physical | E. Carry | F. Harmfully | G. Heavy | H. Development</p>
+        		</div>
+    			<div class="question">
+            			<h2>Question:</h2>
+            			<p>Excessive amounts of homework can be (16)<span><input type="text" id="ans16" name="answer" required></span> to kids both (17)<span><input type="text" id="ans17" name="answer" required></span> and mentally. A lot of homework usually means a lot of books to (18)<span><input type="text" id="ans18" name="answer" required></span> in their bags. Fifty-five percent of PSHS students carry loads of (19)<span><input type="text" id="ans19" name="answer" required></span> books that are more than fifteen percent heavier than their body weight, which is the recommended limit. Carrying large amounts of weight daily at a young age can do a lot of damage because bones are still in the (20)<span><input type="text" id="ans20" name="answer" required></span> stage.</p>
+        		</div>	
+		</div>
+    		<br>
+		<div class="blank" id="blank16"></div>
+    		<div class="blank" id="blank17"></div>
+    		<div class="blank" id="blank18"></div>
+   		<div class="blank" id="blank19"></div>
+   		<div class="blank" id="blank20"></div>
+		<br>
+
+  		</form>
+
+		<div id="end">
+			<div id="score">Congratulations! Your final score is: <span id="scoreDisplay"></span>/ 20.</div>
+			<input type="submit">
+  			<input type="reset" onclick="resetMc()">
+		</div>	
+	</div>
+	<script>
+  		function validateForm(event) {
+    			event.preventDefault();
+
+    			const answers = {
+      			'q1': 'has',
+	      		'q2': 'how much',
+      			'q3': 'ours',
+      			'q4': 'detrimental',
+      			'q5': 'gentle',
+ 	     		'q6': 'obstruct',
+ 	     		'q7': 'frozen fish',
+		     	'q8': 'Boats, barges, bobbed',
+  	    		'q9': 'Violet, van, violently',
+ 	     		'q10': 'Unplanned',
+	      		'q11': 'leg',
+      			'q12': 'destructions',
+      			'q13': 'statue',
+      			'q14': 'terminal',
+     	 		'q15': 'comedian: jokes',
+      			'q16': 'Harmful',
+     	 		'q17': 'Physically',
+     	 		'q18': 'Carry',
+     	 		'q19': 'Heavy',
+     	 		'q20': 'development'
+    			};
+
+    			let score = 0;
+  			let blanks = '';
+
+  			for (let i = 1; i <= 15; i++) {
+    				const userAnswerElement = document.querySelector('input[name="q' + i + '"]:checked');
+
+    				if (userAnswerElement !== null) {
+      					const userAnswer = userAnswerElement.value;
+      					const correctAnswer = answers['q' + i];
+
+      					if (userAnswer === correctAnswer) {
+        					score++;
+        					document.getElementById('answer' + i).innerHTML = "Correct answer for " + i + "!";
+        					document.getElementById('answer' + i).style.color = "green";
+						userAnswerElement.parentNode.style.border = "2px solid green";
+						userAnswerElement.parentNode.style.backgroundColor = "#c9f7bc";
+						userAnswerElement.parentNode.style.borderRadius = "5px";
+      					} else {
+        					document.getElementById('answer' + i).innerHTML = "Incorrect answer! The correct answer for " + i + " is " + correctAnswer + ".";
+        					document.getElementById('answer' + i).style.color = "red";
+						userAnswerElement.parentNode.style.border = "2px solid red";
+						userAnswerElement.parentNode.style.borderRadius = "5px";
+						userAnswerElement.parentNode.style.backgroundColor = "#f7bcbe";
+        					blanks += "'" + 'q' + i + "': '" + correctAnswer + "', ";
+      					}
+    				}
+  			}
+  
+			const fillInBlankAnswers = {
+    			'q16': 'Harmful',
+    			'q17': 'Physically',
+    			'q18': 'Carry',
+    			'q19': 'Heavy',
+    			'q20': 'development'
+  			};
+
+  			for (let i = 16; i <= 20; i++) {
+    				const userAnswer = document.getElementById('ans' + i).value.toLowerCase();
+    				const correctAnswer = fillInBlankAnswers['q' + i];
+
+    				if (userAnswer === correctAnswer.toLowerCase()) {
+      					score++;
+      					document.getElementById('blank' + i).innerHTML = "Correct answer for " + i + "!";
+      					document.getElementById('blank' + i).style.color = "green";
+					document.getElementById('ans' + i).style.border = "2px solid green";
+					document.getElementById('ans' + i).style.borderRadius = "5px";
+					document.getElementById('ans' + i).style.backgroundColor = "#c9f7bc";
+    				} else {
+      					document.getElementById('blank' + i).innerHTML = "Incorrect answer! The correct answer for " + i + " is " + correctAnswer + ".";
+      					document.getElementById('blank' + i).style.color = "red";
+					document.getElementById('ans' + i).style.border = "2px solid red";
+					document.getElementById('ans' + i).style.borderRadius = "5px";
+					document.getElementById('ans' + i).style.backgroundColor = "#f7bcbe";
+					blanks += "'" + 'q' + i + "': '" + correctAnswer + "', ";
+    				}
+  			}
+
+			const scoreElement = document.getElementById('score');
+ 		 	document.getElementById("scoreDisplay").textContent = score;
+	
+  		}
+
+  
+		function resetMc() {
+  			location.reload();
+		}
+
+
+
+</script>
+</body>
+</html>
